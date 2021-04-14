@@ -55,7 +55,7 @@ ROOT_URLCONF = 'Excel.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR/'templates/'],
+        'DIRS': [os.path.join(BASE_DIR , 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'Excel.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'farhad market',
+        'NAME': 'etesal',
         'USER': 'postgres',
         'PASSWORD': 'hooman',
         'HOST': 'localhost',
